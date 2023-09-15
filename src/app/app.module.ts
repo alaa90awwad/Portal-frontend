@@ -21,6 +21,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { LoaderInterceptor } from './interceptors/loader.interceptor';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { AccessdeniedComponent } from './components/accessdenied/accessdenied.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SideBarComponent,
     NavbarComponent,
     FooterComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AccessdeniedComponent
   ],
   imports: [
     BrowserModule,

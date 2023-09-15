@@ -9,8 +9,8 @@ export default class ActivateGuard implements CanActivate {
   canActivate() {
     console.log('ActivateGuard#canActivate called, can: ', this.can);
     if (!this.can) {
-      alert('Activation blocked');
-      this.router.navigate(['/login']);
+     // alert('Activation blocked');
+      this.router.navigate(['/accessdenied']);
       return false;
     }
 
