@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col col-md-6"><b>Manage Products</b></div>
+            <div class="col col-md-6">
+                <a  routerLink="/create" class="btn btn-success btn-sm float-end">Add Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <tr>
+                <th>Image</th>
+                <th>Product title</th>
+                <th>Category</th>
+                <th>destcription</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            <tr *ngFor="let pro of productsList | paginate: { itemsPerPage: 5, currentPage: p }; index as i; ">
+                <td><img [src]="pro.image" width="75" /></td>
+                <td>{{ pro.title }}</td>
+                <td>{{ pro.category }}</td>
+                <td>{{ pro.description }}</td>
+                <td>{{pro.price }}</td>
+                <td>
+                    <form method="post" action="">
+                        <a [routerLink]="['/edit', pro.id]"  class="btn btn-warning btn-sm">Edit</a>
+                        <input type="submit" class="btn btn-danger btn-sm" value="Delete" (click)="delete(pro.id)"/>
+                    </form>
+
+                </td>
+            </tr>
+        </table>
+
+        <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+
+    </div>
+</div>

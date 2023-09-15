@@ -1,0 +1,81 @@
+<div class="main-content">
+
+    <div class="container-fluid">
+
+        <mat-stepper class="Steps" labelPosition="bottom"  #stepper>
+            <mat-step >
+              <form >
+                <ng-template matStepLabel>Eleigibility Check</ng-template>
+              </form>
+            </mat-step>
+            <mat-step  label="Member Details">
+            </mat-step>
+            <mat-step label="Meal Plan Selection">
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel>Confirmation</ng-template>
+            </mat-step>
+          </mat-stepper>
+
+
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Enter Member Details</h4>
+            </div>
+
+            <div class="card-body">
+                <div >
+                    <div class="card-title">
+                        <h2>Please enter member details below. These details will be used to perform elegibility check. details marked with * are required to complete this step. </h2>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4" style="width:100%">
+                        <mat-form-field  style="width:100%">
+                          <label style="font-size:15px;" class="active">Agency * </label>
+                          <input matInput required >
+                        </mat-form-field>
+                      </div>
+                      <div class="col-md-4" style=" width:100%">
+                        <mat-form-field style="width:100%">
+                          <label style="font-size:15px;" class="active">Member ID * </label>
+                          <input matInput  required>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-md-4" style="width:100%">
+                        <mat-form-field class=" dottedBorder" style="width:100%" >
+                          <label style="font-size:15px;" class="active">Case Manager * </label>
+                          <input matInput  required>
+                        </mat-form-field>
+                      </div>
+
+                  
+                       
+                          
+
+                       
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-4" >
+                        <mat-form-field  class="select1" appearance="fill" style="width:100%">
+                          <mat-label>Refferral Source</mat-label>
+                          <mat-select Class="topunit">
+                              <mat-option></mat-option>
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2">Option 2</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+                   
+                    </div>
+
+                  <div class="btnSearch">
+                        <button type="button"  class="btn btn-success" >FIND MEMBER &nbsp; <mat-icon style="padding-top: 5px;"> search</mat-icon></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

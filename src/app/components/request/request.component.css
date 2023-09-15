@@ -1,0 +1,47 @@
+
+
+::ng-deep .mat-form-field-outline
+{
+    border-bottom: 1px dotted gray !important;
+}
+
+
+::ng-deep  .mat-select-panel,.topunit.mat-select-panel
+{
+  background-color:  white !important;
+
+}
+
+
+::ng-deep .mat-select-panel{
+    background-color:  white !important;
+} 
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #fff !important;; 
+}
+
+::ng-deep .mat-stepper-horizontal{
+    background-color: transparent !important;
+    padding-left: 250px !important;
+    padding-right: 250px !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: purple !important; 
+ }
+
+ .btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 40px;
+    width:150px;
+    height: 30px;
+}
+
+.btnSearch{
+    display: flex;
+    justify-content: center; 
+}

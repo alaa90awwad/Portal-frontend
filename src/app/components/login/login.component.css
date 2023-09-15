@@ -1,0 +1,40 @@
+.login-form-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .button-flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  img{  
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-left: 25%;
+  }
+  button{
+    border-radius: 40px;
+    width:150px;
+
+  }
+
+  ::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: red !important;
+   }
+  
+   ::ng-deep .mat-form-field-underline {
+    /*change color of underline*/
+    background-color: red !important;
+  } 
+  
+  ::ng-deep .mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: red !important;;
+  }

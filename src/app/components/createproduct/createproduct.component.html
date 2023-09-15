@@ -1,0 +1,48 @@
+<div class="card">
+	<div class="card-header">Add Product</div>
+	<div class="card-body">
+		<form method="post" action="">
+			<div class="row mb-3">
+				<label class="col-sm-2 col-label-form">Product title</label>
+				<div class="col-sm-10">
+					<input type="text"  class="form-control" name="title" [(ngModel)]="product.title"/>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<label class="col-sm-2 col-label-form">Student Category</label>
+				<div class="col-sm-10">
+					<select  class="form-control" name="category" [(ngModel)]="product.category">
+						<option value="men's clothing">men's clothing</option>
+						<option value="jewelery">jewelery</option>
+                        <option value="electronics">electronics</option>
+                        <option value="women's clothing">women's clothing</option>
+					</select>
+				</div>
+			</div>
+            <div class="row mb-3">
+				<label class="col-sm-2 col-label-form">Product Description</label>
+				<div class="col-sm-10">
+					<textarea type="text" rows="4" name="description"  class="form-control" [(ngModel)]="product.description"> </textarea>
+				</div>
+			</div>
+            <div class="row mb-4">
+				<label class="col-sm-2 col-label-form">Product Price</label>
+				<div class="col-sm-10">
+					<input type="number" name="price" class="form-control" [(ngModel)]="product.price"/>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<label class="col-sm-2 col-label-form">Product Image</label>
+				<div class="col-sm-10">
+					<input type="file" name="image" [(ngModel)]="product.image"/>
+				</div>
+			</div>
+			<div class="text-center">
+				<input *ngIf="!isEdit" type="submit" class="btn btn-primary" value="Add" (click)="addProduct(product)" />
+                <input *ngIf="isEdit" type="submit" class="btn btn-primary" value="Update" (click)="editProduct(product)" />
+                <input  type="submit" class="btn btn-primary" value="Cancel" (click)="cancel()" />
+                
+			</div>	
+		</form>
+	</div>
+</div>

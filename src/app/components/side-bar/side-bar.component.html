@@ -1,0 +1,20 @@
+<div class="LOGO">
+        <div class="logo-img">
+            <img style="height: 150px;width: 150px;" src="./assets/Images/loginImage.PNG"/>
+        </div>
+        <div >
+            <button type="button"  class="btn btn-success btnNewReq" ><span style="font-size: 20px;"> + &nbsp; </span>e-commerce website</button>
+        </div>      
+</div>
+
+
+<div class="sidebar-wrapper">
+      <ul class="nav">
+          <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="nav-item">
+              <a class="nav-link" [routerLink]="[menuItem.path]" *ngIf="!menuItem.hide">
+                  <i class="material-icons">{{menuItem.icon}}</i>
+                  <p>{{menuItem.title}}</p>
+              </a>
+          </li>
+      </ul>
+  </div>

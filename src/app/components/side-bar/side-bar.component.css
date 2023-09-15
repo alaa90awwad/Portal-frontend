@@ -1,0 +1,21 @@
+.btnNewReq
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 40px;
+    width:150px;
+    height: 30px;
+}
+
+.LOGO{
+
+    padding-left: 35px;
+    z-index: 4;
+    position: relative;
+    background-color: white !important;
+}
+
+.sidebar-wrapper{
+    background-color: white !important;
+}

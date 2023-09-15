@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="container-fluid">
+        <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:void(0)"><h1 >{{getTitle()}}</h1></a>
+          
+     </div>
+     <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <button *ngIf="newUser" type="button" [routerLink]="[newUserPath]" class="btn btnNewUser" ><span class="span1" style="font-size: 15px;"> <b>+</b> &nbsp; </span>New User</button>
+        <button *ngIf="inviteCancel" type="button"  class="btn btnNewUser" style="margin-right: 20px;"><span style="font-size: 15px;"> <b>+</b> &nbsp; </span>INVITE USER</button>
+        <button *ngIf="inviteCancel" type="button"  class="btn btnNewUser" ><span style="font-size: 15px;"> <b>x</b> &nbsp; </span>CANCEL</button>
+        <div style=" cursor: pointer; color: white;font-size: 18px;" (click)="dropdown()"class="dropdown-toggle"id="navbarDropdownMenuLink"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >  <i class="material-icons" style="color: white !important;">person</i> </div>
+   
+       </div>
+   
+       <span (click)="drop()" class="dropdown-menu dropdown-menu-right"  aria-labelledby="navbarDropdownMenuLink"  [class.show]="isAdd" >
+            <a class="dropdown-item"  routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }"  >Profile ( {{name}} )</a>
+            <a class="dropdown-item"  (click)="Logout()" routerLinkActive="active"  >  logout </a  > 
+   </span>
+     </div>
+
+     
+</nav>

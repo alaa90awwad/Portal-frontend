@@ -1,0 +1,28 @@
+.btnAdd{
+    display: flex;
+    justify-content: center; 
+}
+
+.btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 40px;
+    width:150px;
+    height: 30px;
+}
+
+::ng-deep .mat-select-panel{
+    background-color:  white !important;
+} 
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #fff !important;; 
+}
+
+::ng-deep .mat-stepper-horizontal{
+    background-color: transparent !important;
+    padding-left: 250px !important;
+    padding-right: 250px !important;
+}

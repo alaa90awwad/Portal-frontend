@@ -1,0 +1,46 @@
+<div class="card" style="margin: 50px;">
+    <div class="card-header card-header-danger">
+        <h4 class="card-title">User Details</h4>
+    </div>
+
+    <div class="card-body">
+        <div id="typography">
+            <div class="row">
+                <mat-form-field class="col-md-4" style="width:100%">
+                    <label style="font-size:15px;" class="active">First Name * </label>
+                    <input matInput required #firstname="ngModel"  [(ngModel)]="service.newUser.firstname">
+                  </mat-form-field>
+                  <mat-form-field class="col-md-4" style="width:100%" >
+                    <label style="font-size:15px;" class="active">Last Name * </label>
+                    <input matInput  required #lastname="ngModel"  [(ngModel)]="service.newUser.lastname">
+                  </mat-form-field>
+                  <mat-form-field  class="col-md-4 select1" appearance="fill">
+                    <mat-label>Role</mat-label>
+                    <mat-select Class="topunit">
+                        <mat-option></mat-option>
+                        <mat-option value="Role1">Role 1</mat-option>
+                        <mat-option value="Role2">Role 2</mat-option>
+                        <mat-option value="Role3">Role 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+             
+            </div>
+
+            <div class="row">
+                <mat-form-field class="col-md-4" style="width:100%">
+                    <label style="font-size:15px;" class="active">Email * </label>
+                    <input matInput required #email="ngModel"  [(ngModel)]="service.newUser.email">
+                  </mat-form-field>
+                  <mat-form-field class="col-md-4" style="width:100%">
+                    <label style="font-size:15px;" class="active">Password * </label>
+                    <input matInput required type="password" #password="ngModel"  [(ngModel)]="service.newUser.password">
+                  </mat-form-field>
+            </div>
+
+            <div class="btnAdd">
+                <button type="button"  class="btn btn-success" (click)="AddNewUser();" ><mat-icon style="padding-top: 5px;"> add</mat-icon> &nbsp;  Add User </button>
+          </div>
+
+        </div>
+    </div>
+</div>
