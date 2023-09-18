@@ -6,6 +6,7 @@ import { PasswordComponent } from './components/password/password.component';
 import { PortalComponent } from './components/portal/portal.component';
 import { RequestComponent } from './components/request/request.component';
 import { AccessdeniedComponent } from './components/accessdenied/accessdenied.component';
+import ActivateGuard from './activate-guard';
 
 const routes: Routes = [
 
@@ -19,6 +20,7 @@ const routes: Routes = [
     component: PortalComponent,
     children: [{
       path: '',
+      canActivate: [ActivateGuard],
       loadChildren: () => import('./components/portal/Portal.module').then(m => m.PortalModule)
     }]
   },

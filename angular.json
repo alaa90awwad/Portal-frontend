@@ -30,9 +30,8 @@
               "documentation/css/material-dashboard.css"
             ],
             "scripts": [
-
               "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js" ,
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ,
               "./node_modules/@fortawesome/fontawesome-free/js/all.js"
             ]
           },

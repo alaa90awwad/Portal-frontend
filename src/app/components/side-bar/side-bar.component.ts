@@ -46,11 +46,14 @@ export class SideBarComponent implements OnInit {
     if( this.role == 'admin')
     {
       ROUTES.find(route => route.path == '/products').hide = true;
+      ROUTES.find(route => route.path == '/manageproducts').hide = false;
+      ROUTES.find(route => route.path == '/UserManagment').hide = false;
     
      // this.ROUTES[0].hide=true
     }
     else if ( this.role == 'user')
     {
+      ROUTES.find(route => route.path == '/products').hide = false;
       ROUTES.find(route => route.path == '/manageproducts').hide = true;
       ROUTES.find(route => route.path == '/UserManagment').hide = true;
     //  this.ROUTES[1].hide=true

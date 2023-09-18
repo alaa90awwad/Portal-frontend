@@ -11,14 +11,14 @@ import { CreateproductComponent } from '../createproduct/createproduct.component
 
 export const PortalRoutes: Routes = [
 
-    { path:'request', component:RequestComponent,  canActivate: [ActivateGuard]},
-    { path:'UserManagment', component:CompanySettingsComponent, canActivate: [ActivateGuard]},
-    { path:'new-user', component:NewUserComponent, canActivate: [ActivateGuard]},
-    { path:'products', component:ProductsComponent, canActivate: [ActivateGuard]},
-     {path:'productdetails/:id',component:ProductdetailComponent, canActivate:[ActivateGuard] },
-     {path:'manageproducts', component:ManageproductComponent, canActivate:[ActivateGuard]},
-     {path:'create', component:CreateproductComponent, canActivate:[ActivateGuard]},
-     {path:'edit/:id', component:CreateproductComponent, canActivate:[ActivateGuard]}
+    { path:'request', component:RequestComponent},
+    { path:'UserManagment', component:CompanySettingsComponent},
+    { path:'new-user', component:NewUserComponent},
+    { path:'products', component:ProductsComponent},
+     {path:'productdetails/:id',component:ProductdetailComponent },
+     {path:'manageproducts', component:ManageproductComponent},
+     {path:'create', component:CreateproductComponent},
+     {path:'edit/:id', component:CreateproductComponent}
 
 
 ];

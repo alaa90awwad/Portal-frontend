@@ -28,6 +28,7 @@ name:string;
     this.listTitles = ROUTES.filter(listTitle => listTitle);
     this.name= localStorage.getItem('name') ||'';
     console.log(this.name);
+    console.log(this.listTitles);
   }
 
 
@@ -62,6 +63,7 @@ name:string;
 
        Logout(){
         localStorage.removeItem('name');
+        localStorage.removeItem('Role');
         this.activateGuard.setCanActivate(false);
         this.router.navigate(['/login']);
        }
