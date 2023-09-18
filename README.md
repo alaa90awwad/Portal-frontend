@@ -1,4 +1,4 @@
-the system has two roles 
+the system have two roles 
 1- admin with username: admin and Password: admin 
 2-user with username user and password user
 
